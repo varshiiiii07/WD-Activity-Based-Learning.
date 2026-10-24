@@ -1,0 +1,40 @@
+
+body {
+  font-family: Arial;
+  margin: 0;
+  text-align: center;
+  background: #fff0f5;
+  color: #593344;
+}
+header {
+  background: #d96c91;
+  color: white;
+  padding: 20px;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 15px;
+  padding: 20px;
+}
+.card {
+  background: white;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px #ccc;
+}
+img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+h2 { color: #b34470; }
+footer {
+  background: #593344;
+  color: white;
+  padding: 12px;
+}
+@media(max-width:600px) {
+  .gallery { grid-template-columns: 1fr; }
+}
